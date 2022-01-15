@@ -1,0 +1,7 @@
+constraints: its specify rule for data in a table..
+type of constraints:
+1- null.
+2-check constraints,
+3-primary key,
+4-unique constraints.
+5-forein key.

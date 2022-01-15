@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		ul
+		{
+			list-style-type:none;
+			margin:0px;
+            padding: 0px;
+            height: 100%;
+            width: 30%;
+            background-color: red;
+            overflow: auto;
+             position: fixed;
+
+    	}
+
+    	li a
+    	{
+          display: block;
+          text-decoration: none;
+          padding: 20px;
+          color: white;
+          text-align:center;
+        	}
+
+        li a:hover
+        {
+        	background-color: pink;
+
+        }
+
+        li.dropdwon
+        {
+        	display:block; 
+        	 
+        }
+        .dropdwon-content
+        {
+          display: none;
+          position: absolute;
+          background-color:#f9f9f9;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          height: 30%
+          width:30%;
+        }
+
+        .dropdwon-content a
+        {
+        	padding: 12px 16px;
+        	display: block;
+        	color: black;
+        	text-decoration: none;
+        	text-align: left;
+        }
+          .dropdwon:hover .dropdwon-content
+          {
+            display: block;
+          }
+
+	</style>
+</head>
+<body>
+
+		<ul>
+			<li><a href="#">Home </a></li>
+			<li><a href="#">About </a></li>
+			<li class="dropdwon"><a href="#">Product</a>
+
+            <ul class="dropdwon-content">
+                 	<li><a href="#">Electronic</a></li>
+                 	<li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Appliances</a></li>
+               </ul>
+			 </li>
+			<li><a href="#">Contact us</a></li>
+
+		</ul>
+ 
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <script>
+ 	var no,rev,no1,sum=0;
+ 	no=153;
+ 	no1=no;
+ 	while(no1>0)
+ 	{
+ 		rev=no1%10;
+ 		sum=sum+rev*rev*rev;
+ 		no1=parseInt(no1/10);
+ 	}
+    document.write(sum);
+
+
+
+   if(sum==no)
+ 	{
+ 		document.write("Armstrong");
+ 	}
+
+ 	else
+ 	{
+ 		document.write("Not Armstrong")
+ 	}
+ 	
+ </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>grade</title>
+</head>
+<body>
+<script>
+     
+     var a,b,c,sum,avg
+     a=prompt("enter english mark");
+     b=prompt("enter hindi mark");
+     c=prompt("enter marathi mark");
+
+     sum=eval(a)+eval(b)+eval(c);
+     document.write("the sum is"+ sum+"<br>");
+
+
+     avg=sum/3;
+     document.write("th percentage is" + avg+"<br>");
+
+     if(avg>=75)
+     {
+          document.write(" A grade");
+     }
+
+     else
+     if(avg>=60)
+     {
+          document.write("B grade");
+     }
+
+     else
+     if(avg>=50)
+     {
+          document.write("C garde");
+     }
+
+     else
+     if(avg>=40)
+       {
+         document.write("D garde");
+       }   
+
+       else
+       {
+          document.write("fail");
+       }
+
+      
+</script>
+</body>
+</html>

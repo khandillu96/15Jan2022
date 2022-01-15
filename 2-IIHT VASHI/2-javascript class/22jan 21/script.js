@@ -1,0 +1,1 @@
+document.write("welcome to java scrit by dilshad");

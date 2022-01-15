@@ -1,0 +1,22 @@
+varibale:
+A varibale is the name given to memory
+location in a program. 
+
+data-type:
+data-type is just like shape(perkar)
+1) string
+2) integer
+3) float
+4) boolen
+5) none
+
+
+
+Q- type() function and type casting
+ans-type function use to find data type given varibale
+    and A number can be coverted into string and vice versa
+
+
+Q- input() function
+ans - input function allow the user to take input 
+from the kewborad as a string

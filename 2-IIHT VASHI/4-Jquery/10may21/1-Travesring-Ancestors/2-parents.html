@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("span").parents().css({
+				"color": "red",
+				"border":"2px solid red"
+			});
+		});
+	});
+</script>
+<style type="text/css">
+	.one *
+	{
+		display: block;
+		border: 2px solid black;
+		color: black;
+		padding: 5px;
+		margin: 15px;
+	}
+</style>
+</head>
+<body>
+
+<div class="one">	<div>
+	great grandprent
+	<ul>grand parent
+		<li>dircectly parent
+          <span>span</span>
+		</li>
+	</ul>
+</div>
+
+
+<div> grnand parent
+	<p>hi dilsahd here
+		<span>
+	     span		
+		</span>
+	</p>
+</div>
+</div>
+
+<button>one</button>
+</body>
+</html>

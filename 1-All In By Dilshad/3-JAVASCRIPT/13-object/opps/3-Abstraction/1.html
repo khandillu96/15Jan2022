@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2><ins>Abstraction:-</ins></h2>
+    <p>1) Should not exposed and access <span style="color: red;"><strong> MonthlyBonus</strong></span> MonthlyBonus
+        from the outside of the class/function </p>
+
+    <p style="color: red;"><b>=>That means this is not right way to right the Abstraction program given below.</b></p>
+    <script>
+        //created constructor even without using class.
+        function employee1(name, age, baseSalary) {
+            this.name = name;
+            this.age = age;
+            this.baseSalary = baseSalary;
+            this.monthlyBonus = 1000;
+
+            this.getFinalSal = function () {
+                let finalsal = this.baseSalary + this.monthlyBonus;
+                document.write("final Salary is: " + finalsal + "<br>")
+            }//this should not be exposed
+            //this should not be exccess from outside of function/class
+
+
+            this.getEmpDetails = function () {
+                document.write("Name : " + this.name + " | Age: " + this.age + "<br>");
+            }
+
+        }
+
+        let emp1 = new employee1("john", 30, 2000);
+        emp1.getEmpDetails();
+        emp1.getFinalSal();
+
+        document.write("<br>Old sal should not access from outside: "+emp1.monthlyBonus+"<br>");
+
+        emp1.monthlyBonus = 12000; //should not access from outside
+        document.write("updated sal: "+emp1.monthlyBonus+"<br><Br>" )
+
+        emp1.getFinalSal()
+
+    </script>
+    <br><br><br><br>
+
+
+
+
+    <p style="color:darkgreen"><b>=>This is right way to right the Abstraction program given below.</b></p>
+    <script>
+        //created constructor even without using class.
+        function employe2(name, age, baseSalary) {
+            this.name = name;
+            this.age = age;
+            this.baseSalary = baseSalary;
+
+            let monthlyBonus = 1000;  //scop of this var within the function that means will not be able to access out side the calss/function.
+
+            let getFinalSal = function () {
+                let finalsal = baseSalary + monthlyBonus;
+                document.write("final Salary is: " + finalsal + "<br>")
+            }
+
+
+            this.getEmpDetails = function () {
+              
+                document.write("Name : " + this.name + " | Age : " + this.age + "<br>");
+                document.write(getFinalSal());
+
+            }
+
+        }
+
+        let emp2 = new employe2("john", 30, 2000);
+        emp2.getEmpDetails();
+       
+
+
+    </script>
+</body>
+
+</html>

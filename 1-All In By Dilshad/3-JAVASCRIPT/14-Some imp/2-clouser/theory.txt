@@ -1,0 +1,9 @@
+Clouser:
+1)A clouser is function access the parent scope(varibale).
+  It preserve(access) the data from outside.
+2)A clouser is an inner-function that access the outer-function scope(varibale).
+
+every function has three scope.
+1) local scope
+2) globalscope
+3) outer-function scope

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+	  	$("button").click(function(){
+            var txt="";
+            txt+="width "+$("#div1").width()+"<br>";
+            txt+="height "+ $("#div1").height()+"<br>";
+            txt+="inner width "+ $("#div1").innerWidth()+"<br>";
+            txt+="inner height "+ $("#div1").innerHeight()+"<br>";
+            txt+="outer width "+ $("#div1").outerWidth()+"<br>";
+            txt+="outer height "+ $("#div1").outerHeight()+"<br>";
+            txt+="outer width "+ $("#div1").outerWidth(true)+"<br>";
+            txt+="outer height "+ $("#div1").outerHeight(true)+"<br>";
+             $("#div1").html(txt);
+	  	})
+	  })
+	</script>
+	<style type="text/css">
+		#div1{
+			width: 300px;
+			height: 500px;
+			background-color: red;
+			color: white;
+			border: 1px solid black;
+			padding: 4px;
+			margin: 2px;
+		}
+	</style>
+</head>
+
+<body>
+<div id="div1"></div>
+<p>hi</p>
+<button >click</button>
+</body>
+</html>

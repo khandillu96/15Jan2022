@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="f1" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return matchpass()" >
+
+
+<label>password</label>
+<input type="password" name="password1"/><br/><br>
+
+<label>Re-enter your password</label>
+<input type="password" name="password2"> <br>
+
+<input type="submit" value="submit">
+</form>
+
+
+<script>
+	function matchpass()
+	{
+		var firstpw=document.f1.password1.value;
+		var secondpw=document.f1.password2.value;
+
+		if (firstpw==secondpw)(firstpw==null || firstpw=="")
+		 {  
+
+		 	alert("cant blank"):
+		 	return true;
+		 }
+		 else
+		 {
+		 	alert("pass must be same ")
+		 	return false
+		 }
+	}
+</script>
+</body>
+</html>

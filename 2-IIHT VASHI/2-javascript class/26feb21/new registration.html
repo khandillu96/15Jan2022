@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*
+		{ 
+			margin:0px;
+			padding: 0px;
+		}
+        
+
+
+        .regform
+       {
+       	width: 500px;
+       	background-color: rgba(6,150,20,.6);
+        margin: auto; 
+        color:#FFFFFF;	
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+       }
+      
+      .main
+      {
+      	margin: auto;
+      	width: 500px;
+      	padding: 20px;
+      	box-sizing: border-box;
+      	text-transform: capitalize;
+      	background-color: powderblue;
+      }
+		
+     form div
+     {
+     	padding: 10px;
+     	margin-bottom: 25px;
+     }
+
+     input
+     {
+     	width: 350px;
+     	height: 36;
+     	font-size: 18px;
+     	line-height: 40px; 
+     	padding: 0px 16px;
+     	border-radius: 5px;
+     	border: none;
+     }
+
+
+    .one
+    {
+    	margin-left: 20px;
+    	background-color: lightgreen;
+    	color: white;
+    	font-size: 20px;
+    }
+    
+
+    .one:hover
+    {
+    	background-color: darkgreen;
+    }
+
+	</style>
+</head>
+<body>
+	<div class="regform"><h1>Registration form</h1></div>
+
+<div class="main">
+<form action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validation()">
+	<div >
+		<label>user name </label><br>
+		<input type="text" id="user" name="user_nane"><br>	
+		 <span id="userid" style="color : red;"></span>
+	</div>
+   
+	<div>
+		<label>password</label><br>
+		<input type="password" id="password" name="pw"><br>
+		<span id="passwordid" style="color : red;"></span>
+	</div>
+
+	<div>
+		<label>confrom password</label><br>
+		<input type="password" id="cnfmpw" name="cnmfpw"><br>
+		<span id="cnfmpwid" style="color : red;"></span>
+	</div>
+
+	<div>
+		<label>mobile number</label><br>
+		<input type="text" id="number" name="mobilenumber"><br>
+		<span id="numberid" style="color : red;"></span>
+
+	</div>
+
+	<div>
+		<label>Email</label><br>
+		<input type="email" id="email" name="email"><br>
+		<span id="emailid" style="color : red;"></span>
+	</div>
+	
+    <div>
+	<input  class="one" type="Submit" value="submit">
+	 </div>
+	
+</form>
+</div>
+
+
+<script>
+
+	function validation()
+	   {
+	   var user=document.getElementById('user').value;
+     var pw=document.getElementById("password").value;
+     var repw=document.getElementById("cnfmpw").value;
+     var num=document.getElementById("number").value;
+     var email=document.getElementById("email").value;
+
+
+
+
+
+
+	   if (user=="")
+	    {
+	    	document.getElementById("userid").innerHTML="**please fill the username";
+	    	return false;
+	    }
+      
+      else if ((user.length <=2) || (user.length >=20))
+      {
+        document.getElementById("userid").innerHTML="**user length must be beetween 2 to 20";
+        return false;
+      }
+      else if(!isNaN(user))
+      {
+        document.getElementById("userid").innerHTML="**only character are allowed";
+        return false;
+      }
+
+     else
+    {
+        document.getElementById("userid").innerHTML=""
+    }
+
+
+
+
+
+     
+      if (pw=="") 
+      {
+         document.getElementById("passwordid").innerHTML="** please enter the password";
+	     	return false;
+      }
+       else if((pw.length<=5) || (pw.length>=20)) 
+      {
+         document.getElementById("passwordid").innerHTML="**password length must be beetween 5 to 20";
+    return false;
+      }
+      else
+    {
+        document.getElementById("passwordid").innerHTML=""
+    }
+      
+
+
+
+
+
+      if (repw=="") 
+      {
+         document.getElementById("cnfmpwid").innerHTML="** please re-enter the password";
+    return false;
+      }
+     else if ((repw.length<=5)||(repw.length>=20))
+       {
+         document.getElementById("cnfmpwid").innerHTML="**password length must be beetween 5 to 20";
+    return false;
+       }
+      else  if (repw!==pw)
+       {
+         document.getElementById("cnfmpwid").innerHTML="**password are not matching";
+    return false;
+       }
+     
+    else
+    {
+        document.getElementById("cnfmpwid").innerHTML=""
+    }
+
+
+
+
+
+      if (num=="") 
+      {
+         document.getElementById("numberid").innerHTML="** please enter the mobilee number";
+    return false;
+      }
+
+    else  if(isNaN(num))
+      {
+        document.getElementById("numberid").innerHTML="** please enter digit only, characters not allowed";
+      }
+    else if(num.length!==10)
+    {
+     document.getElementById("numberid").innerHTML="** please enter 10 digit  ";
+    }
+
+    else
+    {
+        document.getElementById("numberid").innerHTML=""
+    }
+
+
+
+
+
+
+           
+      if (email=="") 
+      {
+         document.getElementById("emailid").innerHTML="** please enter the email";
+    return false;
+      }
+     else if(email.indexOf("@")<=0)
+     {
+         document.getElementById("emailid").innerHTML="** @ invalid position";
+    return false;
+     }
+     else if((email.charAt(email.length-4)!==".") && (email.charAt(email.length-3)!=="."))
+     {
+       document.getElementById("emailid").innerHTML="** . invalid position";
+    return false;
+     }
+     else
+    {
+        document.getElementById("emailid").innerHTML=""
+    }
+
+	 }
+</script>
+</body>
+</html>

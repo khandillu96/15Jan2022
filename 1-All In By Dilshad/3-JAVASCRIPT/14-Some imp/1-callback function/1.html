@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    function dilshad(){
+        document.write("this is callback function 1<br>")
+    }
+    function callback(c_back){
+        document.write("main function not callback 1<br>")
+        c_back();
+    }
+    callback(dilshad);
+    document.write("<br><br><br>");
+
+
+
+    function dil(a){
+        document.write("this is callback function  "+ a+"<br>");
+    }
+    function call(callback){
+        document.write("main function not callback <br>");
+        var par1=12;
+        callback(par1);
+    }
+    call(dil)
+    document.write("<br><br><br>");
+
+
+
+    function dil1(a,b){
+        document.write("this is callback function "+ a+" : "+b+"<bR>");
+    }
+    function call1(b,callback,par2){
+        document.write("main function not callback<br>");
+        document.write("main function 1rst para is b= " +b+"<bR>");
+        document.write("main function 3rd para is par2= "+par2+"<bR>");
+        var aa=100;
+        callback(aa,b);   //refer how many parameter  in selected callback function;
+    }
+    call1(123,dil1,23)
+    document.write("<br><br><br>");
+
+
+
+
+
+
+
+
+
+</script>    
+</body>
+</html>

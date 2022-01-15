@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <script type="text/javascript">
+ 
+ 
+
+   function test(){
+
+   	var txt1="<p>text 1</p>";
+   	var txt2=$("<p></p>").text("text 2");
+   	var txt3=document.createElement("P");
+   	txt3.innerHTML="text 3";
+
+   	$("p").append(txt1,txt2,txt3);
+   }
+
+
+ 	
+
+  </script>
+  
+
+ 
+</head>
+<body>
+<div>
+
+
+<p>this is paragraph</p>
+
+
+<button onclick="test()">click me </button>
+</body>
+</html>

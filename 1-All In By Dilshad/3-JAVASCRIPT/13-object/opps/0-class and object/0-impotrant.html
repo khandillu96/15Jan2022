@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+/*
+type of method
+1-prototype
+2-contrustor
+3-static
+
+*/
+
+//1-prototpye  //we need to call protoype
+class book{
+    prototype(){
+        document.write("prototype method<br><br><Br>");
+    }
+}
+var prototype=new book()
+    prototype.prototype()  //=> calling
+
+//2-consturtor  //automatic conturctor method will call
+class books{
+    constructor(){
+      document.write("constructor method<br><br><br>");
+    }
+}
+var contuctor=new books();
+
+
+//3-static   //nomraly we creat object then call to  method in static no need to create object( if make object then will show error)
+class bookss{
+    static staticmethod(){
+        document.write("static method");
+    }
+}
+// var static=new bookss();
+//     static.staticmethod();  will be shown error
+bookss.staticmethod();     //wirte way to calling static method
+</script>    
+</body>
+</html>

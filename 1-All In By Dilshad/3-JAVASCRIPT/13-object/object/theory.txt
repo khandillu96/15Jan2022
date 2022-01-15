@@ -1,0 +1,15 @@
+What is object :-
+A javaScript object is an entity having 
+state and behavior (properties and method).
+For example:- car, pen, bike, chair, glass, keyboard,
+               monitor etc.
+
+
+JavaScript is an object-based language. 
+Everything is an object in JavaScript.. 
+
+
+Type of object 
+1) by object literal 
+2) By creating instance of Object directly (using new keyword)
+3).By using an object constructor (using new keyword)

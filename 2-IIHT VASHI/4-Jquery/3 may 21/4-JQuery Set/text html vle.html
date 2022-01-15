@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+      $(document).ready(function(){
+      	$("#t").click(function(){
+      		alert("text:" + $(".t").text());
+      	});
+
+      $("#h").click(function(){
+      		alert("html:" + $(".h").html());
+      	});
+
+      $("#v").click(function(){
+      		alert("text:" + $(".v").val());
+      	});
+      });
+	</script>
+</head>
+
+
+<body>
+
+<p class="t"> hi dilshad here </p>
+<p class="h"> hi <b>dilshad khaan here</b> from kurla</p>
+<input class="v" type="text" value="khaan">
+
+<button id="t">text</button>
+<button id="h">html</button>
+<button id="v">vlue</button>
+</body>
+</html>

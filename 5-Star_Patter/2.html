@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function febo(a){
+            num_1=0;
+            num_2=1;
+            febo=0
+            document.write(num_1+" ")
+            document.write(num_2+" ")
+            for(var i=0;i<=a;i++){
+                var febo=num_1+num_2;
+                document.write(febo+" ");
+                num_1=num_2;
+                num_2=febo;
+            }
+        }
+        febo(8);
+        document.write("<bR><Br><br>");
+
+
+
+
+        var a=0;
+        var b=1;
+        var sum=0;
+        document.write(a +" "+b+" ")
+        for(var j=0;j<=2;j++){
+          
+            sum=a+b;
+            document.write(sum+" ");
+            a=b;
+            b=sum;
+        }
+    </script>
+</body>
+</html>

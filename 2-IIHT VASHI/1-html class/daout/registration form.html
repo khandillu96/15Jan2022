@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+	<style>
+
+		body
+		{
+			margin-top:50px; 
+			text-transform: capitalize;
+            font-family: verdana;
+		}
+		.menu
+		{
+			background-color:  #f2f2f2;
+			width: 400px;
+			height: 500px;
+			border-radius: 20px;	 
+			margin: auto;
+		}
+
+		form
+		{
+			padding: 20px; 
+		}
+
+        .firstname
+       { 
+       	border-radius: 4px;
+       	border: 1px solid black;
+       	padding: 0px 22px;
+       	width: 200px;
+       	height: 36px;
+       	line-height: 36px; 
+       	margin-top: 10px;
+       	font-size: 16px;
+       } 
+
+      .lastname
+      {
+         border-radius: 4px;
+       	border: 1px solid black;
+       	padding: 0px 22px;
+       	width: 200px;
+       	height: 36px;
+       	line-height: 36px; 
+       	margin-top: 10px;
+       	font-size: 16px;
+      }
+
+      .option 
+
+
+      {
+       border-radius: 4px;
+       	border: 1px solid black;
+        width: 180px;
+        height: 36px;
+        line-height: 36px;
+        padding: 0px 22px;
+         font-size: 16px;
+         margin-top: 10px;
+      }
+     .option option
+     {text-transform: capitalize;
+      font-size: 20px;
+     }
+
+
+     button
+     {  margin-left: 30px;
+     	margin-top: 50px;
+     	width: 300px;
+     	border-radius: 5px;
+     	border: none;
+   	    padding: 20px;
+     	text-transform: capitalize;
+     	background-color:  #4CAF50;
+     	color: white;
+     }
+		 
+		 button:hover
+		 {
+          background-color: #50a059;
+		 }
+
+     
+     </style>
+</head>
+<body>
+
+<div class="menu">
+	<form>
+		<label class="firstlable">first name</label> <br>
+		<input class="firstname" type="text" name="firstname" placeholder="First Name"><br>
+
+		<div style="margin-top: 40px;">
+		<label>last name</label><br>
+		<input class="lastname" type="text" name="last name" placeholder="Last Name"><br>
+		</div>
+
+        <div style="margin-top: 40px;">
+		<label>country</label><br>
+		<select class="option"  name="country">
+		<option>Australia</option>
+		<option>Canada</option>
+		<option>India</option>
+		</select>
+		<br>
+        </div>
+		<button type="submit"> submit </button>
+	</form>
+</div>
+</body>
+</html>

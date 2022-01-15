@@ -1,0 +1,79 @@
+What is opps concept :
+Stands for object oriented programming language. 
+The purpose of oops is deal with real world entity using 
+programing /scripting language.
+
+
+1-with the help of oops we can covert big code to in small code.
+2-with the help of oops we can  moduler the big code and reuse the same code
+3-with the help of oops we creat big code  we can use this  big code in big project after again  n again.
+
+
+OOPS concept mostly use in javascript frameworks like-> react js,angular js ,node js
+addvantage.1-easly debug,2-we dont use for  small project.
+
+
+opps features:
+1-Class
+2-Object
+3-Encapsulation(data hide)
+4-Inheritance(resuibility)  
+5-Abstraction (data hide)
+6-Poly-morphism(object take many form) 
+
+
+
+1-What is class:-
+Class is collection of object.Class is just templates for JavaScript Objects.
+It's doesn't take any space of momory. class is also called as blueprint / entity logic.
+
+
+2-What is object :
+Object is an instance(varibale) of class that execute the class. Once objects created 
+it takes up space like other varible in memory. 
+Object collection of property and method.
+
+
+
+what is property=is it like varibale(in this define varibale).
+what is method=method is like function supposse (we have to add
+               2 num thet program will be written in method)
+
+type of method:
+1-prototype  => we need to call,IN JS every function has a property called prototype.
+2-consturtor => we dont neet to call it will automatically call once object created.
+3-static     => In other method we creat object then call method in this case
+                no need to create object (if we create object then will show error).
+
+
+3)what is Encapsulation(data hide).
+a- Encapsulation is a process of binding the data(i.e varibale) with the function on the data.
+b- wrapping up property(varibale) and method(function) in one single unit.
+c- use setter method to set data and use getter method to get the data.
+
+
+
+4)Inheritance(reusibility)
+when we consturt a new class from existing class such a way that the new class access all the 
+properties & method of existing class called inheritance.
+
+
+
+5)what is Abstraction(data hide).
+a- An Abstraction is a way of HIDING the implementation details and
+   SHOWING only the functionality to users.
+b- Abstraction hides certain details and only show the essential features of the object.
+c- Hide Details ,Show Essential.
+
+
+
+
+6)Poly-morphism(object take many form) 
+  poly        = many
+  morph       = forms
+  polymorphism= many forms
+a-polymorphism is the ability to create a varibale/property,a funtion/method,or an object that has
+  more then one form.
+b-same method name may be behave diffrent forms in diffrent class.
+
+

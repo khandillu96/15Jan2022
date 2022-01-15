@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+      class father{
+        setvalue(arg1,arg2){
+            this.a=arg1;
+            this.b=arg2;
+        }
+    }
+
+    class son extends father{
+        display1(arg3){
+            this.c=arg3;
+            var sum=this.a+this.b+this.c;
+            document.write("ADD A,B,C is : "+ sum +"<Br>");
+            
+        }
+    }
+
+    class grandchild extends son{
+        display2(){
+        document.write("argument A: "+ this.a+"<bR>");
+        document.write("argument B: "+ this.b+"<Br>");
+        document.write("argument C: "+ this.c+"<bR><Br><br><br>");
+        }
+    }
+
+     var grd_son=new grandchild()
+         grd_son.setvalue(12,23);
+         grd_son.display1(12);
+         grd_son.display2();
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    //constructor
+    class fatherI{
+        constructor(arg1,arg2){
+            this.a=arg1;
+            this.b=arg2;
+        }
+    }
+
+    class sonI extends fatherI{
+        display11(arg3){
+            this.c=arg3;
+            var sum=this.a+this.b+this.c;
+            document.write("ADD A,B,C is : "+ sum +"<Br>");
+            
+        }
+    }
+
+    class grandchildI extends sonI{
+        display12(){
+        document.write("argument A: "+ this.a+"<bR>");
+        document.write("argument B: "+ this.b+"<Br>");
+        document.write("argument C: "+ this.c+"<bR><Br><br><br>");
+        }
+    }
+
+     var grd_sonI=new grandchildI(12,43)
+         grd_sonI.display11(12);
+         grd_sonI.display12();
+    
+</script>    
+</body>
+</html>

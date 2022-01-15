@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var a=" i am parent varibale";
+    function clouser(){
+        document.write(a)
+    }
+    clouser();
+    document.write("<br><Br><Br>");
+
+
+    function outer(){
+        var aa="i am outer variable";
+        document.write(aa);
+        function inner(){
+           var bb="i am inner varibale";
+           document.write("<br>"+bb+"<br>"+aa); //i accessed outer varibale inside the inser varibale.
+        }
+        inner();
+    }
+    outer();
+
+</script>    
+</body>
+</html>

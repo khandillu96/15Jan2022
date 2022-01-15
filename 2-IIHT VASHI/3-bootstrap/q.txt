@@ -1,0 +1,5 @@
+q
+
+1-p padding y 1 to 5 same as margin.
+2-respomsive container
+3- what is sm in reposive clmn?

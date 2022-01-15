@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class cellphone{
+      
+        displaymodal(){
+            var modal;  // <-- can define if not define page will be run as well
+            document.write(this.modal)
+        }
+    }
+    var samsung=new cellphone();
+    samsung.modal="m31"
+    samsung.displaymodal();
+document.write('<Br><br>')
+
+
+
+ class mobile{
+     displaymobile(modal){
+         var modaldis; // <-- can define if not define page will be run as well
+         this.modaldis=modal;
+         document.write(this.modaldis+"<br>")
+     }
+ }
+ var samsunge=new mobile();
+     samsunge.displaymobile("m31s");
+var  lg=new mobile();
+     lg.displaymobile("onepluse");
+</script>    
+</body>
+</html>

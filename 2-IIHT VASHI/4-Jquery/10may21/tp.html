@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+      $(document).ready(function(){
+      	$(document).click(function(){
+      		$("span").nextUntil("p").css({
+      			"color":"red",
+      			"border":"2px dotted black",
+      		})
+      	})
+      })
+	</script>
+</head>
+<style type="text/css">
+	.siblings * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+</style>
+<body class="siblings">
+
+<div>div (parent)
+  <p>p</p>
+  <span>span</span>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <p>p</p>
+</div>
+
+<button>click</button>
+</body>
+</html>

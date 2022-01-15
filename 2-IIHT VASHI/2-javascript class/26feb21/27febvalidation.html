@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp"  onsubmit="return validateform()" >  
+	<label>first name</label><br>
+	<input type="text" name="name"><br><br>
+
+    <label>first name</label><br>
+	<input type="password" name="pw"><br><br>
+    
+
+    <input type="submit" value="register">
+</form>
+
+
+<script>
+	function validateform()
+	{
+		var name=document.myform.name.value;
+		var pw= document.myform.pw.value;
+		//document.write(name.length);
+
+		if(name==""||name==null)
+		{
+			alert("cant'blank");
+			return false;
+		}
+
+		else if(name.length<=4 && name.length>=20)
+		{
+			alert("name should be 5 to 20");
+			return false;
+		}
+		else if(!isNaN(name))
+		{
+			alert("only character allowed");
+			return false;
+		}
+
+
+
+		if((pw="")||(pw=null))
+		{
+			alert("cant'blank");
+			return false;
+		}
+
+		else if((pw.length<=4)|| (pw.length<=20))
+		{
+			alert("name should be 5 t0 20");
+			return false;
+		}
+	}
+</script>
+</body>
+</html>

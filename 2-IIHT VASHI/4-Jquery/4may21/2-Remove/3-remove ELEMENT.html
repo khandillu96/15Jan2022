@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".one").remove();
+				$(".two,#three").remove();
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+	<p class="one" style="color:red; ">this is para</p>
+	<p class="two">this is para</p>
+	<p id="three">this is para</p>
+
+<button>Remove</button>
+</body>
+</html>

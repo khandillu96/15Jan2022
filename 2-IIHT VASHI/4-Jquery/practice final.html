@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function(){
+     $("#one").find("*").css({
+     	"color":"red",
+     	"border":"3px solid blue"
+     });
+});
+	});
+</script>
+<style type="text/css">
+	#one *{
+		display: block;
+		border: 3px solid black;
+		color: red;
+		padding: 5px;
+		margin: 15px;
+	}
+</style>
+
+ </head>
+ <body>
+ <div id="one">
+<div id="t" style="width:500px;">
+	g-g-p
+	<ul>g-p
+    <li>p
+     <span id="s">span</span>
+    </li>
+	</ul>
+</div>
+ </div>
+
+ <button>click</button>
+ </body>
+ </html>

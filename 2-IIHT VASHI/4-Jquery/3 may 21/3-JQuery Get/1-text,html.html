@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$("#text").click(function(){
+				 alert("Text: " + $(".p").text());
+          });
+
+			$("#html").click(function(){
+				alert("html:" + $(".p").html());
+
+			});
+		});
+	</script>
+</head>
+
+<body>
+<p class="p">  this is some <b>bold</b> text here</p>
+
+
+<button id="text"> show text</button>
+<button id="html"> show html</button>
+</body>
+</html>

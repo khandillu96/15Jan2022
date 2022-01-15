@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+			});
+		});
+	</script>
+</head>
+
+
+<body>
+<p>fade in parameter</p>
+<button style="padding: 4px;margin-bottom: 4px">click me for fade show</button>
+
+<div id="div1" style="width:100px;height:100px;background-color:red;"></div><br>
+<div id="div2" style="width:100px;height:100px;background-color:green;"></div><br>
+<div id="div3" style="width:100px;height:100px;background-color:blue;"></div>
+</body>
+</html>

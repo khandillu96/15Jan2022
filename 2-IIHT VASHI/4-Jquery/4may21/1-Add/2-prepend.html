@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("p").prepend(" hi dilshad khan from <i>india</i> ");
+			});
+
+			$("#btn2").click(function(){
+				$("ol").prepend("<li>cow milk</li>")
+			})
+		})
+	</script>
+</head>
+<body>
+<p> hi dilshad</p>
+<p> hi from india</p>
+
+<ol>
+	<li>milk</li>
+	<li>coffe</li>
+	<li> curd</li>
+</ol>
+
+
+<button id="btn1">Append</button>
+<button id="btn2">Append</button>
+</body>
+</html>

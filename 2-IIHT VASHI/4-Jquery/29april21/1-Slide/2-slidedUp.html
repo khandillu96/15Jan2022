@@ -1,0 +1,40 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#one").click(function(){
+		$("#two").slideUp();
+	});
+});
+
+</script>
+
+<style type="text/css">
+	#one,#two
+	{
+		padding: 4px;
+		font-size: 18px;
+		background-color: cyan;
+		border: 1px solid blue;
+		text-align: center;
+
+	}
+
+	#two
+	{  
+		padding: 50px;
+		font-size: 30px;
+	}
+</style>
+</head>
+<body>
+
+ <div id="one"> slide down/up</div>
+ <div id="two"> hello word</div>
+
+
+</body>
+</html>

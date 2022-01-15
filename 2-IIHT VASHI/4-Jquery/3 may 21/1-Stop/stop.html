@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".panel").click(function(){
+				$(".none").slideDown(5000);
+			});
+			$(".stop").click(function(){
+				$(".none").stop();
+			});
+		});
+	</script>
+</head>
+<body>
+<button class="stop"> stop slide</button>
+
+<div class="panel"> slide down panel</div>
+<div style="display: none;background-color: pink;" class="none"><p> heello world</p>
+<p> heello world</p>
+<p> heello world</p></div>
+</body>
+</html>

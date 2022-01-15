@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+	  
+	  $(document).ready(function(){
+	  	$(".div1").click(function(){
+          $(".div2").slideToggle();
+	  	});
+	  });
+      
+	</script>
+ 
+ <style type="text/css">
+ 	body{
+ 		box-sizing: border-box;
+ 	}
+ 	.div1,.div2{
+ 		background-color: cyan;
+ 		border: 1px solid red;
+ 		text-align: center;
+ 		font-size: 18px; 
+ 	}
+
+ 	.div1{
+ 		width: 200px;
+ 		height: 30px;
+ 	
+
+ 	}
+
+
+ 	.div2
+ 	{
+ 		width: 200px;
+ 		height: 70px;
+ 		
+ 		
+
+ 	}
+
+ 	table, th ,td
+ 	{
+ 		border: 1px solid black;
+ 		border-collapse: collapse;
+ 	}
+ </style>
+
+</head>
+<body>
+ 
+ <div class="div1"> slide dwon the panel</div>
+ <div class="div2">
+ 	<table>
+ 		<thead>
+ 			<tr>
+ 				<th>1</th>
+ 				<th>1</th>
+ 				<th>1</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			
+ 			<tr>
+ 				<td>1</td>
+ 				<td>khan</td>
+ 				<td>khan</td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+ </div>
+
+</body>
+</html>

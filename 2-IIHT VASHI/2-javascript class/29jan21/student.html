@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student</title>
+	<style >
+         body
+         {
+         	margin: 50px;
+         }
+         form
+         {  padding: 20px;
+         	width: 200px;
+         	background-color: rgba(35,120,20,0.6);
+         	margin: auto;
+         	text-transform: capitalize;
+         }
+
+
+		.english,.marathi,.hindi,.add,.avrg,.percentage
+		{   border-radius: 6px;
+			border: 1px solid black;
+			width: 100px;
+			height: 25px;
+			line-height: 25px;
+            padding: 0px 22px;
+            font-size: 16px;
+		}
+
+
+		.button
+		{
+			width: 100%;
+			border: none;
+			border-radius: 6px;
+			padding: 10px 0px;
+           margin-top: 12px;
+		}
+
+
+	 
+	</style>
+</head>
+<body>
+<form>
+	<h2>student marksheet</h2>
+
+
+	<label>english</label><br>
+	<input class="english" id="english" type="text" name="english">
+	<br><br>
+
+
+	<label>hindi</label><br>
+	<input class="hindi" id="hindi"type="text" name="hindi">
+    <br><br>
+
+    <label>marathi</label>
+    <input class="marathi" id="marathi"type="text" name="marathi">
+    <br><br>
+
+    <label>get  Addition </label><br>
+    <input class="add" id="add" type="text" name="id"><br><br>
+    
+
+    <label>get avrg</label>
+    <input class="avrg" id="avrg" type="text" name="avrg">
+
+    <br><br>
+  
+<label>get percentage</label>
+ <input class="percentage" id="percentage" type="text" name="percentage">
+
+    <input class="button" type="button" onclick="myadd()"  value="add">
+
+</form>
+
+<script type="text/javascript">
+	function myadd()
+	{
+		 
+	var a=parseInt(document.getElementById("english").value);
+	var b=parseInt(document.getElementById("hindi").value);
+	var c=parseInt(document.getElementById("marathi").value);
+
+	    var d=a+b+c;
+        document.getElementById('add').value=d;
+
+        var e=d/3;
+        document.getElementById('avrg').value=e;
+        
+        var f=e*100/300;
+        document.getElementById('percentage').value=f;
+	}
+</script>
+</body>
+</html>

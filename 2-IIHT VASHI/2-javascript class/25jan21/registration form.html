@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body
+		{
+         background-image: url(beach.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         font-family: sans-serif;
+         margin-top: 40px;
+		}
+
+
+       .regform
+       {
+       	width: 800px;
+       	background-color: rgba(0,0,0,.6);
+        margin: auto; 
+        color:#FFFFFF;	
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+       }
+       
+       .main
+       {
+       	background-color: rgba(0,0,0,0.5);
+       	width: 800px;
+       	margin:auto;
+       }
+
+       form
+       {
+       	padding:10px;
+       }
+
+       #name
+       {
+       	width: 100%;
+       	height:100px; 
+       	}
+
+
+       	.name
+       	{
+          margin-left: 25px;
+          margin-top: 30px;
+          width:125px;
+          color: white;
+          font-size: 18px;
+          font-weight: 700; 
+          text-transform: capitalize;
+       	}
+
+       .firstname
+       {
+       	position: relative;
+       	left: 200px;
+       	top:-37px;
+       	line-height: 40px;
+       	border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+       }
+
+       .lastname
+       {
+         position: relative	;
+         left: 450px;
+         top:-80px;
+         line-height: 40px;
+         border-radius: 6px;
+         padding: 0 22px;
+         font-size: 16px;
+         color: #555
+       }
+
+       .firstlable
+       {
+        position: relative;
+        left: 200px;
+        top: -45px;
+        color: #E5E5E5;
+        text-transform: capitalize;	
+        font-size:14px;
+       
+       }
+      
+       .lastlable
+       {
+        position: relative;
+        left: 205px;
+        top: -45px;
+        color: #E5E5E5;
+        text-transform: capitalize;	
+        font-size:14px;
+     
+       }
+
+       .company
+       {
+       	position: relative;
+       	left: 200px;
+       	top: -37px;
+       	line-height:40px;
+       	width: 520px;
+       	border-radius: 6px;
+       	font-size: 16px;
+       	color: #555;
+       	padding: 0px 22px;
+       }
+       
+       .email
+       { 
+       	position: relative;
+       	left: 200px;
+       	top: -37px;
+       	line-height:40px;
+       	width: 520px;
+       	border-radius: 6px;
+       	font-size: 16px;
+       	color: #555;
+       	padding: 0px 22px;
+       }
+
+       .code
+       {
+        position: relative;
+       	left: 200px;
+       	top: -37px;
+       	line-height:40px;
+       	width: 150px;
+       	border-radius: 6px;
+       	font-size: 16px;
+       	color: #555;
+       	padding: 0px 22px;
+       }
+
+       .number
+       {
+       	 position: relative;
+       	left: 200px;
+       	top: -37px;
+       	line-height:40px;
+       	width: 235px;
+       	border-radius: 6px;
+       	font-size: 16px;
+       	color: #555;
+       	padding: 0px 22px;
+       }
+
+    .area-code
+       {
+       	position: relative;
+       	color: white;
+       	text-transform: capitalize;	
+        font-size:14px;
+       }
+
+    .phone-number
+       {
+        position: relative;
+        right: 85px;
+       	color: white;
+       	text-transform: capitalize;	
+        font-size:14px;
+       }
+
+    .option
+       {
+        position: relative;
+       	left: 200px;
+       	top: -37px;
+       	line-height:40px;
+       	height: 40px;
+       	width: 555px;
+       	border-radius: 6px;
+       	font-size: 16px;
+       	color: #555;
+       	padding: 0px 22px;
+      }
+
+    .option option
+      {
+      	font-size: 20px;
+      }
+
+    #student
+      {
+        margin-left: 25px;
+        color: white;
+        text-transform: capitalize;
+        font-size: 18px;
+      }
+
+    .radio
+      {
+       display: inline-block;
+      	padding-right: 70px;
+        font-size: 20px;
+        margin-left: 25px;
+        margin-top: 15px;
+        color: white;
+        
+      }
+
+     .radio input
+       {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+       }
+
+      button
+      { 
+      	width: 80%;  
+      	background-color:#3BAF9F;
+      	margin-top:50px;
+      	margin-left:75px; 
+      	margin-bottom: 25px;
+      	text-align: center;
+      	border: 2px solid #366473;
+        border-radius:12px;
+        padding: 14px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      button:hover
+       {
+       	background-color: #5390F5;
+       }
+
+	</style>
+</head>
+<body>
+<div class="regform"> <h1>Registration Form</h1></div>
+<div class="main">
+	<form>
+		<div id="name">
+			<h2 class="name"> Name </h2>
+			<input class="firstname" id="firstname" type="text" name="first_name" placeholder="First Name"><br>
+			<label class="firstlable">first name</label>
+			<input class="lastname" id="lastname" type="text" name="last_name" placeholder="Last Name">
+			<label class="lastlable"> last name</label>
+		</div>
+
+		<h2 class="name"> Company</h2>
+		<input class="company" id="company" type="text" name="company" placeholder="Enter your Company Name">
+
+		<h2 class="name">Email</h2>
+		<input  class="email" id="email" type="text" name="email" placeholder="Enter your Email ">
+
+		<h2 class="name">phone</h2>
+		    <input class="code" id="code" type="text" name="area_code" placeholder="Country Code">
+        <label class="area-code">Area code</label>
+        <input class="number" id="number" type="text" name="phone" placeholder="your Contact Number">
+        <label class="phone-number"> phone number</label>
+
+
+        <h2 class="name">subject</h2>
+        <select class="option" id="option" name="subject">
+         <option disabled="disabled" selected="selected">--choose option</option>
+         <option>subject1</option>
+         <option>subject2</option>
+         <option>subject3</option>
+         <option>subject4</option>
+        
+        </select>
+
+
+
+        <h2 id="student"> are you beginner</h2>
+        <label class="radio">
+        	<input   type="radio" id="radio"   name="beginner">
+        	yes
+        </label>
+         <label class="radio">
+        	<input   type="radio" id="radio" name="beginner"> 
+        	No
+        </label>
+
+        <button type="button" onclick="myfunction()" >Register</button>
+	</form>
+</div>
+
+<script type="text/javascript">
+ 
+ function myfunction()
+ {
+var firstname=document.getElementById("firstname").value;
+var lastname=document.getElementById("lastname").value;
+var company=document.getElementById("company").value;
+var email=document.getElementById("email").value;
+var code=document.getElementById("code").value;
+var number=document.getElementById("number").value;
+var option=document.getElementById("option").value;
+var radio=document.getElementById("radio").value;
+
+document.write(firstname+"<br>");
+document.write(lastname+"<br>");
+document.write(company+"<br>");
+document.write(email+"<br>");
+document.write(code+"<br>");
+document.write(number+"<br>");
+document.write(option+"<br>");
+document.write(radio+"<br>");
+} 
+
+</script>
+ 
+</body>
+
+</html>

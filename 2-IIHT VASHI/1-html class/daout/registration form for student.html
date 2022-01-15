@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student Registration form</title>
+	<style>
+		body
+		{
+			background-color: black;
+			margin: 20px;
+		 
+		}
+
+		.heading h2
+		{
+			font-size: 36px;
+			position: relative;
+			top: 30px;
+		}
+
+		.mane
+		{
+			background-color: white;
+			width: 800px;
+			margin: auto;
+			padding-top:0px;
+			padding-left: 20px; 
+			padding-right:20px; 
+      padding-bottom:  20px;
+		}
+        
+         .form
+         {
+         	margin-top: 0px;
+
+         }
+
+
+        .firstname
+        {
+         padding:0px 22px;
+         border: 1px solid black;
+         border-radius: 4px;
+         line-height: 36px;
+         height: 36px;
+         width: 180px;
+         font-size: 16px
+        }
+
+        .firstlabel
+        {
+        	position: relative;
+        	top: 30px;
+        	left: -230px;
+        	font-size:10px;
+        }
+
+
+        .middelname
+        {
+       	 position: relative;
+         left: -40px;
+         padding:0px 22px;
+         border: 1px solid black;
+         border-radius: 4px;
+         line-height: 36px;
+         height: 36px;
+         width: 180px;
+         font-size: 16px
+
+        }
+
+       .middellabel
+       {
+       	position: relative;
+       	top: 30px;
+       	left: -270px;
+       	font-size: 10px;
+       }
+
+
+       .lastname
+       {
+       	 position: relative;
+         left: -90px;
+         padding:0px 22px;
+         border: 1px solid black;
+         border-radius: 4px;
+         line-height: 36px;
+         height: 36px;
+         width: 180px;
+         font-size: 16px
+
+       }
+
+       .lastlable
+       {
+       	position: relative;
+        left: 480px;
+       	font-size: 10px;
+       }
+
+       .optionmonth
+       {
+        width: 160px;
+        height: 36px;
+        line-height: 36px;  
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 16px;
+        text-transform: capitalize;
+       }
+
+       .optionmonth option
+       {
+        text-transform: capitalize;
+        font-size: 16px;
+       }
+
+      .month
+      {
+        position: relative;
+        top: 24px;
+        right: 160px;
+        font-size: 10px;
+      }
+
+
+      .optionday
+      {
+        position: relative;
+        left: -30px;
+         width: 160px;
+        height: 36px;
+        line-height: 36px;  
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 16px;
+        text-transform: capitalize;
+      }
+
+       .optionday option
+      {
+        font-size: 16;
+      } 
+
+      .day
+      {
+        position: relative;
+        top:24px;
+        left: -190px;
+        font-size: 10px;
+      }
+
+      .optionyear
+      {
+        position: relative;
+        left: -50px;
+        width: 160px;
+        height: 36px;
+        line-height: 36px;
+        border: 1px solid black;
+        border-radius: 4px;
+        font-size: 16px;
+        padding-left: 16px
+      }
+
+      .optionyear option
+      {
+        font-size: 16px;
+      }  
+
+      .year
+      {
+        position: relative;
+        top: 24px;
+        left: -210px;
+      }
+
+
+     .optiongender
+     {
+      width:180px;
+      line-height: 36px;
+      height: 36px;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 16px;
+      padding-left: 16px;
+     }
+      .optiongender option
+      {
+        font-size: 16px;
+      }
+
+    .lane1
+    {
+      width: 658px;
+      height: 36px;
+      line-height: 36px;
+      padding: 0px 22px;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+   .addresslable1
+   {
+    font-size: 10px;
+   }
+
+   .lane2
+   {
+      width: 658px;
+      height: 36px;
+      line-height: 36px;
+      padding: 0px 22px;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 16px;
+   }
+
+    .addresslable2
+   {
+    font-size: 10px;
+   }
+
+   .city
+   { 
+
+    width: 300px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding:0px 22px; 
+   }
+
+   .citylable
+   { 
+
+    font-size: 10px;
+    position: relative;
+    top: 28px;
+    left: -350px;
+   }
+    
+    .state
+    { position: relative;
+      left: -10px;
+      width: 295px;
+      padding:0px 22px;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 36px;
+      height: 36px;
+
+    }
+
+   .statelable
+   {
+    position: relative;
+    top: 28px;
+    font-size: 10px;
+    left: -355px;
+    }
+
+      
+	 button
+   {
+    width: 702px;
+    line-height: 36px;
+    height: 36px;
+    padding: 0px 22px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color:#00cc66; 
+    color: white;
+   }
+
+   button:hover
+   {
+    background-color: #33ff99;
+   }
+  </style>
+</head>
+<body>
+ <div class="mane">
+<div class="heading"><h2>Student Registration Form</h2></div>
+	Fill out form carefully for registration 
+	<br><br><br>
+<hr>
+
+<div class="form">
+	<form>
+		<h2  >Student Name</h2>
+		<div style="margin-top: -15px;">
+		<input  class="firstname" id="firstname" type="text" name="first name">
+		<label class="firstlabel">First Name</label>
+
+		<input  class="middelname" id="middelname" type="text" name=" middel name">
+		<label class="middellabel">Middel Name</label>
+
+		<input  class="lastname" id="lastname" type="text" name="last name">
+		<label class="lastlable">Last Name</label>
+</div>
+<br>
+
+
+    <div style="float: left">
+		<h2>Birth Date</h2>
+    <div  style="margin-top: -15px;">
+	
+    <select class="optionmonth" id="optionmonth" name="month">
+      <option  disabled="disabled" selected="selected">select month</option>
+      <option>january</option>
+      <option>february</option>
+      <option>march</option>
+      <option>april</option>
+      <option>may</option>
+      <option>june</option>
+      <option>july</option>
+      <option>august</option>
+      <option>september</option>
+      <option>octuber</option>
+      <option>november</option>
+      <option>decmber</option>
+    </select>
+		<label class="month">Month</label>
+
+
+		<select name="day" id="optionday" class="optionday">
+    <option disabled="disabled" selected="selected">select day</option>  
+    <option>1</option>  
+    <option>2</option>
+    <option>3</option> 
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+    </select>
+		<label class="day">Day</label>
+
+	 <select name="year" id="optionyear" class="optionyear">
+   <option selected="selected" disabled="disabled">1990</option>
+   <option>1991</option> 
+   <option>1992</option>
+   <option>1993</option>
+   <option>1994</option>
+   <option>1995</option>
+   <option>1996</option>
+   <option>1997</option>
+   <option>1998</option>
+   <option>1990</option>
+   <option>2000</option>
+   <option>2001</option>
+   <option>2002</option>
+   <option>2003</option>
+   <option>2004</option>
+   <option>2005</option>
+   <option>2006</option>
+   <option>2007</option>
+   <option>2008</option>
+   <option>2009</option>
+   <option>2010</option>
+   <option>2011</option>
+   <option>2012</option>
+   <option>2013</option> 
+   <option>2014</option>
+   <option>2015</option>
+   <option>2016</option>
+   <option>2017</option>
+   <option>2018</option>
+   <option>2019</option>
+   <option>2020</option>
+   <option>2021</option>
+  </select>
+		<label class="year">year</label>
+    </div>
+    </div>
+
+
+
+    <div style="float: left; margin-left: -50px">
+		<h2>Gender</h2> 
+    <div style="margin-top: -15px">
+		<select class="optiongender" id="optiongender" name="gender">
+			<option disabled="disabled" selected="selected">Please Select</option>
+			<option>Male</option>
+			<option>Female</option>
+			<option>Not Selected</option>
+		</select><br>
+    </div></div>
+
+
+    <div style="clear: both; margin-top:140px;" >
+		<h2>Address</h2>
+    <div style="margin-top: -15px;">
+	    	<input class="lane1" id="lane1" type="text" name="address"><br>
+        <label class="addresslable1">Street Address lane 1</label><br>
+      <div style="margin-top: 20px;">
+        <input class="lane2" id="lane2" type="text" name="address"><br>
+        <label class="addresslable2">Street Address Lane 2</label><br>
+    </div></div>
+
+
+         <div style="margin-top:20px; margin-bottom: 50px; ">
+         <input class="city" id="city" type="text" name="city">
+         <label class="citylable">City</label>
+
+         <input class="state" id="state" type="text" name="city">
+         <label class="statelable">State</label>
+         
+         <br></div>
+         <button type="button"  onclick="mypage()">Submit</button>
+          </div>
+	</form>
+</div>
+</div>
+
+
+<script type="text/javascript">
+  function mypage()
+  {
+   
+   var firstname=document.getElementById("firstname").value;
+   var middelname=document.getElementById("middelname").value;
+   var lastname=document.getElementById("lastname").value;
+   var month=document.getElementById("optionmonth").value;
+   var day=document.getElementById("optionday").value;
+   var year=document.getElementById("optionyear").value;
+   var gender=document.getElementById("optiongender").value;
+   var lane1=document.getElementById("lane1").value;
+   var lane2=document.getElementById("lane2").value;
+   var city=document.getElementById("city").value;
+   var state=document.getElementById("state").value;
+
+   document.write(firstname+"<br>");
+   document.write(middelname+"<br>");
+   document.write(lastname+"<br>");
+   document.write(month+"<br>");
+   document.write(day+"<br>");
+   document.write(year+"<br>");
+   document.write(lane1+"<br>");
+   document.write(lane2+"<br>");
+   document.write(city+"<br>");
+   document.write(state+"<br>")
+
+  }
+</script>
+
+
+
+</body>
+</html>

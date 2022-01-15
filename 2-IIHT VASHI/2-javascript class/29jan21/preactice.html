@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<style >
+
+		body
+		{
+			margin-top: 50px;
+		}
+		
+		form
+		{
+			margin: auto;
+			padding: 20px;
+			width: 150px;
+			background-color: blue;
+			color: white;
+            
+            text-transform: capitalize;
+		}
+       .englsih,.hindi,.marathi,.add,.avrg
+       {
+       	border: 1px solid black;
+       	border-radius: 4px;
+       	padding-left: 20px;
+        height: 20px;
+        line-height: 20px; 
+        font-size: 16px;
+        width: 100px;
+       }
+       
+       button
+       {
+       	width: 100%;
+       	border: none;
+       	border-radius: 20px;
+       	color:white;
+       	background-color: red;
+       	text-transform: uppercase;
+
+       }
+	</style>
+</head>
+<body>
+
+<form>
+	<h2>student</h2>
+
+	<label>englsih</label><br>
+	<input class="englsih" id="englsih" type="text" name="englsih">
+
+<br><br>
+
+	<label>hindi</label><br>
+	<input class="hindi" id="hindi" type="text" name="hindi">
+<br><br>
+	<label>marathi</label><br>
+	<input class="marathi" id="marathi" type="text"  name="marathi">
+<br><br>
+	<label>get addition</label><br>
+	<input class="add" id="add" type="text"  name="addition">
+<br>
+<br>
+
+<label>avrg</label><br>
+	<input class="avrg" id="avrg" type="text"  name="avrg">
+<br>
+<br>
+	<button type="button" onclick="myaddition()"> add </button>
+</form>
+
+<script >
+	function myaddition()
+	{
+
+     var a=parseInt(document.getElementById("englsih").value);
+     var b=parseInt(document.getElementById("hindi").value);
+     var c=parseInt(document.getElementById("marathi").value);
+
+     var d=a+b+c;
+     document.getElementById('add').value=d;
+     
+     var z=d/3;
+     document.getElementById('avrg').value=z;
+	}
+</script>
+
+
+</body>
+</html>

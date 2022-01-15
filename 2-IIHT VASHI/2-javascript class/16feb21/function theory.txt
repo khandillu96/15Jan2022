@@ -1,0 +1,10 @@
+function is a set of code that can be called n no of time 
+syntax: function funtion name()
+{
+statement 
+}
+
+type of function:
+1- empty function       (can use as a onclick)
+2- parameter function   (can use as a onclick)
+3- return type function (can not use as a onlcick)

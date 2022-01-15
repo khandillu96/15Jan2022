@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //poly= many;
+    //morph = forms;    
+    //polymorphism = many form.
+
+    class Animal{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+
+         eats(){
+            document.write("mathod name is same but   forms is diffrent: "+this.name+"<br>")
+        }
+    }
+
+
+    class murphy extends Animal{
+        eats(){
+            //super.eats();
+            document.write("mathod name is same but   forms is diffrent: "+this.name+" | "+this.age)
+        }
+        //the child class eats methodd overridden.
+    }
+
+    // let animal=new Animal("dog",23);
+    // animal.eats();
+
+    let animal1=new murphy("billi",25);
+    animal1.eats();
+</script>    
+</body>
+</html>

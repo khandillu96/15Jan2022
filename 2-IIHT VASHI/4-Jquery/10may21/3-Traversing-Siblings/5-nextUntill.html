@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("h1").nextUntil("h6").css({
+				"color": "red",
+				"border":"3px solid red"
+			});
+		});
+	});
+</script>
+<style type="text/css">
+	.one *
+	{
+		display: block;
+		border: 2px solid black;
+		color: black;
+		padding: 5px;
+		margin: 15px;
+	}
+</style>
+</head>
+<body  class="one">
+
+<div style="width:500px;">
+	parent
+ 
+ <h1>h1</h1>
+ <h2>h2</h2>
+ <h3>h3</h3>
+ <h4>h4</h4>
+ <h5>h5</h5>
+ <h6>h6</h6>
+</div>
+
+<button>one</button>
+</body>
+</html>

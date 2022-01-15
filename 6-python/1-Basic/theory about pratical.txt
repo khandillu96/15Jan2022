@@ -1,0 +1,31 @@
+module:-
+file containing code writtren by someone
+which can imported in our program.
+ex:-import os--> built-in module.
+    import flask,tenser-flow-->not-built-in/external module.
+
+note:-
+1-want to seee built-in module-->seacrh on crome-> built-in module in python
+2-download the not-built-in/external module by pip.
+
+
+pip:-
+pip is package manager for python we can use pip 
+to install a module in our system.
+ex:- pip install flask,tensor-flow.
+
+
+type of modules:- there is two type of module in python
+1-built-in module--> pre installed in python.
+2-external module--> need to install using pip.
+
+
+using python as a terminaml:-
+we can use python as a calculator by typing python on terminal.
+this open REPL(read evaluate print loop).
+
+
+comment:-
+write somthing in program but dont want to execute.
+single line comment--> #
+multi line comment --> '''content ''' 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function dilshad(callback){
+        document.write("main function<bR>");
+        callback();
+    }
+    dilshad(function dil(){
+        document.write("call back function");
+    });
+    document.write("<br><Br><Br>");
+
+
+
+
+    function dilshad1(callback1){
+        document.write("main function<br>");
+        var vari=100
+        callback1(vari);
+    }
+    dilshad1(function dil1(a){
+        document.write("callback function = "+a)
+    });
+    document.write("<br><Br><Br>");
+
+
+
+
+
+    function dilshad2(callback2){
+        document.write("main function<br>");
+        var vari=100
+        callback2(vari);
+    }
+    dilshad2(function (a){
+        document.write("callback function = "+a)
+    });
+    document.write("<br><Br><Br>");
+
+
+
+
+    function dilshad3(callback3){
+        document.write("main function<br>");
+        var vari=100
+        callback3(vari);
+    }
+    dilshad3(a =>document.write("callback function = "+a));
+    document.write("<br><Br><Br>");
+
+
+  
+
+
+
+
+</script>
+</body>
+</html>

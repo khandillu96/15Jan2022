@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<form>
+
+
+	Name: <input type="text" id="fname" onfocus="abcc(this)" onblur="xyzz(this)"><br><br>
+	Class: <input type="text" id="name" onfocus="abcc(this)" onblur="xyzz(this)"><br><br>
+	Country
+	<select onfocus="abcc(this)" onblur="xyzz(this)">
+		<option>india</option>
+		<option>bangladesh</option>
+		<option>pakistan</option>
+		<option>africa</option>
+	</select>
+   
+</form>
+
+<script type="text/javascript">
+	function abc(khan){               //first way
+khan.style.background="blue";
+}
+
+function xyz(khann){
+khann.style.background="red";
+}
+//short cut way--(reffer) focus and addeventlistner method YAHOO BABA
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+Name
+<input type="text" id="inp" onfocus="abc()" onblur="xyz()" >
+<script>
+ function abc(){                             //second way
+	 var a=document.getElementById("inp");
+	 a.style.background="green";
+	 a.style.color="red";
+ }
+
+ function xyz(){
+	 var b=document.getElementById("inp");
+	 b.style.background="red";
+ }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#text").click(function(){
+			alert($(".html").text());
+		});
+
+		$("#html").click(function(){
+			alert($(".html").html());
+		});
+		$("#value").click(function(){
+			alert($(".value").val());
+		});
+	});
+	
+</script>
+</head>
+<body>
+<button id="text">text</button>
+<button id="html">html</button>
+<button id="value">value</button>
+
+
+
+<p class="html">hi <b>dilsahd here </b> from kurla</p>
+<input class="value" type="text" value="dilshad">
+</body>
+</html>

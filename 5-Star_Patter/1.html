@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var n=5
+for(var i=1;i<=n;i++){
+    for(j=1;j<=i;j++){
+    document.write("* ");
+}
+document.write("<br>")
+}
+document.write("<br><br>");
+
+
+for(var i=1;i<=n;i++){
+    for(var j=i;j<=n;j++){
+        document.write("* ");
+    }
+    document.write("<br>");
+}
+document.write("<br><br>");
+
+
+
+
+
+
+
+//right sided tringle n=5;
+for(var i=1;i<=n+1;i++){
+    for(var j=i;j<=n;j++){
+        document.write("&nbsp&nbsp&nbsp");
+    }
+    for(var j=1;j<=i;j++){
+        document.writeln("*")
+    }
+    document.write("<br>");
+}
+document.write("<br><br>");
+
+
+
+for(var i=1-1;i<=n;i++){
+    for(var j=1;j<=i;j++){
+        document.write("&nbsp&nbsp&nbsp")
+    }
+    for(var j=i;j<=n;j++){
+        document.write("* ")
+    }
+    document.write("<br>");
+}
+document.write("<br><br>");
+
+
+
+//hill pattern
+for(var i=1;i<=n;i++){
+    for(var j=i;j<=n;j++){
+        document.write("&nbsp&nbsp&nbsp");
+    }
+    for(var j=1;j<=i-1;j++){
+        document.writeln("* ")
+    }
+    for(var j=1;j<=i;j++){
+        document.writeln("* ")
+    }
+    document.write("<br>");
+}
+document.write("<br><br>");
+
+//reverse hill pattern
+for(var i=1;i<=n;i++){
+    for(var j=1;j<=i;j++){
+        document.write("&nbsp&nbsp&nbsp");
+    }
+    for(var j=i;j<n;j++){
+        document.writeln("* ")
+    }
+    for(var j=i;j<=n;j++){
+        document.writeln("* ")
+    }
+    document.write("<br>");
+}
+document.write("<br><br><br><br>");
+
+
+
+
+
+
+
+
+
+
+
+    
+
+for(var i=1;i<n;i++){
+    for(var j=i;j<=n;j++){
+        document.write("&nbsp&nbsp&nbsp");
+    }
+    for(var j=1;j<=i-1;j++){
+        document.writeln("* ")
+    }
+    for(var j=1;j<=i;j++){
+        document.writeln("* ")
+    }
+    document.write("<br>");
+}
+for(var i=1;i<=n;i++){
+    for(var j=1;j<=i;j++){
+        document.write("&nbsp&nbsp&nbsp");
+    }
+    for(var j=i;j<n;j++){
+        document.writeln("* ")
+    }
+    for(var j=i;j<=n;j++){
+        document.writeln("* ")
+    }
+    document.write("<br>");
+}
+document.write("<br><br>");
+
+
+
+</script>    
+</body>
+</html>

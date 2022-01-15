@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>area</title>
+	<style >
+         body
+         {
+         	margin: 50px;
+         }
+         form
+         {  padding: 20px;
+         	width: 200px;
+         	background-color: rgba(0,0,225,0.6);
+         	margin: auto;
+         	text-transform: capitalize;
+         }
+
+
+		.x,  .z
+		{   border-radius: 6px;
+			border: 1px solid black;
+			width: 100px;
+			height: 25px;
+			line-height: 25px;
+            padding: 0px 22px;
+            font-size: 16px;
+		}
+
+
+		.button
+		{
+			width: 100%;
+			border: none;
+			border-radius: 6px;
+			padding: 10px 0px;
+       
+		}
+
+
+	 
+	</style>
+</head>
+<body>
+<form>
+	<h2>addition</h2>
+
+
+	<label> Enter radius</label><br>
+	<input class="x" id="x" type="text" name="x">
+	<br><br>
+
+
+	 
+
+    <label> get area </label><br>
+    <input class="z" id="z" type="text" name="xyz"><br><br>
+
+    <input class="button" type="button" onclick="myarea()"  value="Area">
+
+</form>
+
+<script type="text/javascript">
+	function myarea()
+	{
+		  
+   var r=parseInt(document.getElementById("x").value);
+   var area=3.14*r*r;
+   document.getElementById("z").value=area;
+	}
+</script>
+</body>
+</html>

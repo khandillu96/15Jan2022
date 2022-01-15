@@ -1,0 +1,6 @@
+what is callback function:
+a callback function is a function passed into a another function 
+as an argument is called.
+
+syncronus:-it will excute one by one
+asyncronus:-it will excute after given time

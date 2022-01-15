@@ -1,0 +1,9 @@
+what is string:-
+string is data type in python.
+string is sequence of charracters enclose in 
+single,double,trirrple qoutes.
+
+string write in 3way in python.
+1-single qoutes string => a='dilshad'
+2-double qoutes string => b="dilshad"
+3-triple qoutes string => c='''dilshad'''

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+	<style>
+		*{
+			margin: 0px;
+			padding:0px;
+		}
+
+		body
+		{
+			background-image: url(blue.jpg);
+			background-position: center;
+			background-size:cover;
+		 	background-repeat: no-repeat;
+            margin-top: 100px;
+		}
+
+
+         .manemenu
+         {
+         	width: 400px;
+         	height: 400px;
+         	background-color: white;
+         	border-radius: 20px;
+         	text-transform: capitalize;
+         	margin: auto;
+
+         }
+
+         .heading
+         {
+         	
+         	 padding: 40px ;
+         	 text-align: center;
+         }
+
+          form
+         {
+           padding: 15px;
+           font-size: 18px; 
+
+         }
+
+         .username
+         {
+         	width: 300px;
+         	margin-top: 8px;
+         	border: 1px solid black;
+         	border-radius: 50px;
+         	padding: 8px 22px;
+         	background-color:	#ccffff;
+
+         }
+
+        
+        .password
+        {
+        	width: 300px;
+         	margin-top: 8px;
+         	border: 1px solid black;
+         	border-radius: 50px;
+         	padding: 8px 22px;
+         	background-color:	#ccffff;
+        }
+
+        #password
+        {
+        	margin-top: 20px;
+        }
+
+
+        button
+        {
+         margin-top: 40px;
+         width: 50%;
+         padding: 10px 0px;
+         font-size: 20px;
+         margin-left: 92px;
+         background-color: #3BAF9F;
+         border: 1px solid black;
+         border-radius: 50px;
+        }
+
+        button:hover
+       {
+       	background-color: #5390F5;
+       }
+
+       .forget
+       {
+       	margin-top: 8px;
+       	text-align: center;
+       	font-size: 15px;
+       }
+
+
+   	   .anchor
+   	   {
+        text-decoration: none;
+        color: black;
+
+       }
+	</style>
+</head>
+<body>
+<div class="manemenu">
+<div  class="heading"><h2>welcome back</h2></div>
+<div class="menu">
+	<form>
+		<label>username or email</label><br>
+		<input class="username" id="username"type="text" name="username" placeholder="Username or Email"> <br>
+
+        <div id="password">
+		<label class="name">password</label><br>
+		<input class="password" id="password" type="password" name="password" placeholder="Password"><br>
+        </div>
+		<button type="submit" onclick="myfunction()">Login</button><br>
+
+		
+		<div class="forget"><a class="anchor" href="#">forget password?</a></div>
+	</form>
+</div>
+</div>
+
+<script  type="text/javascript">
+
+  function myfunction()
+  {
+     var username=document.getElementById("username").value;
+     var password=document.getElementById("password").value;
+
+     document.write(username);
+     document.write(password);
+  }
+</script>
+</body>
+</html>

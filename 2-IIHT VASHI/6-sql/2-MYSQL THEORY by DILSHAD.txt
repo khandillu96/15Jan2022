@@ -1,0 +1,254 @@
+database:
+
+data type:
+1- varchar(1 to 255); insert('___')
+2- int;               insert(___)
+3- float(6,2);        insert(___)
+4- date;              insert('yyyy-mm-dd')
+5- time;              insert('hh:mm:ss')
+6- datetime;          insert('yyyy-mm-dd hh:mm:ss')
+
+
+want to see data_type:
+1-desc students
+2-show columns from [table_name]dilshad_one
+
+
+recode:
+1-insert into [table_name] (x,y,z) values(1,2,3)
+2-update [table_name] set x='123' where x=x;
+3-delete from [table_name] where x=x
+
+
+
+1)opeators
+a-select * from  table_name 
+b-select x,y,z from table_name  ,  x-x-x- where id=1
+c-ADDVANCED follow 1 thoery
+
+
+2)constraints:
+constraints means restriction on data table column.
+it is sepcify the rule for paticular data in table.
+
+type of constraints:
+1-not null
+2-default
+3-unique
+4-check
+5-forein key
+6-primary key
+
+exampele:-
+1,2,3,4:-
+CREATE TABLE xyz( id int not null UNIQUE,city varchar(55) not null DEFAULT 'MUMBAI',
+                 age int not null CHECK(age>=10),PHONE varchar(10) not null UNIQUE)
+5,6:-follow yaho baba  mysql 20 tutorial
+
+imp:
+ALTER table xyz modify id int not null auto_increament
+ALTER table xyz add primary key(id)
+ALTER TABLE xyz DROP primary key
+
+
+
+
+
+3)join:
+three type of join in mysql join:
+1)Inner join
+2)Outer join
+  i)Left Outer join
+  ii)Right Outer join
+3)Cross join
+
+
+1)inner join 
+SELECT a.id,a.name,a.doj,b.city
+FROM dilshad_32_join_city b
+INNER JOIN dilshad_31_join_name a
+ON a.id=b.id
+
+2)left join
+SELECT a.id,a.name,a.doj,b.city
+FROM dilshad_32_join_city b
+left JOIN dilshad_31_join_name a
+ON a.id=b.id
+
+2)right join
+SELECT a.id,a.name,a.doj,b.city
+FROM dilshad_32_join_city b
+right JOIN dilshad_31_join_name a
+ON a.id=b.id
+
+3)cross join
+SELECT a.id,a.name,a.doj,b.city
+FROM dilshad_31_join_city a
+cross JOIN dilshad_32_join_name b
+
+
+
+
+
+Triggers:A trigger in MySQL is a set of SQL statements that reside in a system catalog. 
+         It is a special type of stored procedure that is invoked automatically in response to an event.
+         Each trigger is associated with a table, which is activated on any DML statement such as
+         INSERT, UPDATE, or DELETE.
+Triggers: A trigger is a special type of stored procedure that automatically runs when an event occures 
+          in the databsase server.
+Triggers:when the event occurs and condition is true executed action
+         three component:
+         1)event
+         2)condition
+         3)action
+
+Type Of Triggers:
+1)BEFORE/after insert
+2)BEFORE/after updates
+3)BEFORE/after delete
+
+
+
+
+1)before insert
+DELIMITER //
+CREATE TRIGGER binsert1 
+BEFORE INSERT ON dilshad_41_triggers 
+for EACH ROW
+BEGIN 
+IF new.occupation='Engg' then SET
+new.occupation='Eenginers';
+END IF;
+END //
+
+
+2)After insert:
+DELIMITER //
+CREATE TRIGGER ainsert
+AFTER INSERT ON dilshad_41_triggers 
+FOR EACH ROW
+BEGIN
+INSERT INTO dilshad_42_triggers VALUES (new.id,new.name,new.occupation);
+END //
+
+
+5)before delete:
+DELIMITER //
+CREATE TRIGGER bdelete
+BEFORE DELETE ON tb1
+FOR EACH ROW
+BEGIN
+INSERT INTO tb4 (eid,ename,esalary) 
+VALUES(old.id,old.name,old.salary);
+END
+
+
+define variable:
+variable:- set @name='dilsahd'
+print: select $name;
+
+SELECT @income(var_name):= MAX(col_name) FROM table_name;  
+ex:- SELECT @income:= MAX(income) FROM employees;  
+
+
+
+Transaction:
+insert update delete after then
+1-commit,
+2-roll back;
+
+
+Distinct:
+SELECT DISTINCT col_name(age)  FROM table_name(employee);
+
+
+
+
+
+IF and CASE clause:
+IF:
+select * ,IF(condition,true,false) As alias_name from table_name
+select * , IF([colmn_name]per>=33,'pass','fail') as Results from [table_name]xyz
+
+
+
+CASE:
+select * ,
+case
+ when per>=80 and per<=100 then 'merit'
+ when per>=60 and per<80   then '1st division'
+ when per>=40 and per<60   then '2nd division'
+ when per>=33 and per<40   then '3rd division'
+ when per<33               then 'fail'
+ else 'not correct per%'
+END as GRADE 
+From
+student;
+
+
+
+
+procedure:
+A procedure (often called a stored procedure) is a collection of pre-compiled SQL statements stored inside the database. 
+It is a subroutine or a subprogram in the regular computing language.
+A procedure always contains a name, parameter lists, and SQL statements.
+
+1)
+DELIMITER &&
+CREATE PROCEDURE ddd()
+BEGIN 
+SELECT id,reverse(name),concat(name,salary) AS sal_name FROM dilshad_61_stored_procedure LIMIT 4;
+end &&
+DELIMITER ;
+calling := call ddd()
+
+
+
+2)
+DELIMITER &&
+CREATE PROCEDURE eee(IN para int)
+BEGIN 
+SELECT id,reverse(name) AS reverse_name,concat(name,salary) AS sal_name FROM dilshad_61_stored_procedure LIMIT  para;
+END  &&
+DELIMITER ;
+calling := call eee(2 or 3 or 4)
+
+
+3)
+DELIMITER &&
+CREATE PROCEDURE fff(out max_salary int)
+BEGIN
+SELECT max(salary) as max_sal FROM dilshad_61_stored_procedure;
+END &&
+DELIMITER ;
+call fff(@a); select @a
+
+
+drop:-
+drop procedure get_merit_students
+
+
+
+
+
+function:
+1)
+DELIMITER &&
+CREATE FUNCTION get_designation_name(d_id int) RETURNS varchar(20)
+BEGIN
+DECLARE de_name varchar(20) DEFAULT"";
+SELECT name into de_name FROM students WHERE id=d_id;
+RETURN de_name;
+End &&
+calling :- SELECT get_designation_name(1)
+
+
+
+
+1)datatype and basic
+1.1)operators
+2)constrain 
+3)join
+4)triggers
+5)transection and if else case and distinct
+6)procedure and function;

@@ -1,0 +1,22 @@
+ .one
+		 {
+		 	background-color: red;
+		 	width: 400px;
+		 }
+
+		 .two
+		 {
+		 	 
+		 	text-align: center;
+		 	padding: 20px;
+		 }
+
+
+		 #one 
+		 {
+		 	height: 100px;
+		 	width: 100px;
+		 	background-color: blue;
+		 	word-wrap: break-word;
+
+		 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add</title>
+	<style >
+         body
+         {
+         	margin: 50px;
+         }
+         form
+         {  padding: 20px;
+         	width: 200px;
+         	background-color: rgba(0,0,0,0.6);
+         	margin: auto;
+         	text-transform: capitalize;
+         }
+
+
+		.x, .y,.z
+		{   border-radius: 6px;
+			border: 1px solid black;
+			width: 100px;
+			height: 50px;
+			line-height: 20px;
+            padding: 0px 22px;
+            font-size: 16px;
+		}
+
+
+		.button
+		{
+			width: 100%;
+			border: none;
+			border-radius: 6px;
+			padding: 10px 0px;
+            text-transform:uppercase;
+		}
+
+
+	 
+	</style>
+</head>
+<body>
+<form>
+	<h2>addition</h2>
+
+
+	<label> Enter X value</label><br>
+	<input class="x" id="x" type="text" name="x">
+	<br><br>
+
+
+	<label>Enter Y value</label><br>
+	<input class="y" id="y"type="text" name="y">
+    <br><br>
+
+    <label> Addition of X+Y </label><br>
+    <input class="z" id="z" type="text" name="xyz"><br><br>
+
+    <input class="button" type="button" onclick="myadd()"  value="add">
+
+</form>
+
+<script type="text/javascript">
+	function myadd()
+	{
+		 
+	var a=parseInt(document.getElementById("x").value);
+		var b=parseInt(document.getElementById("y").value);
+
+	    var c=a+b;
+        document.getElementById('z').value=c;
+
+	}
+</script>
+</body>
+</html>

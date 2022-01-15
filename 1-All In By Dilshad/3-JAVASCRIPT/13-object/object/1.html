@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- // by object literal -->
+<span id="demo"></span><br>
+<script>
+ var employe= {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  salary: 1200
+};
+document.write(employe.firstName+"<br>");
+document.write(employe.age+"<br>");
+document.write("salary:=> "+employe['salary']+"<br>");
+document.getElementById("demo").innerText=employe.firstName+" congrats ur are "+employe.age+" year old"
+</script>
+<br><br><br>
+
+
+
+
+
+
+
+<!-- by creating instance of OBJECT -->
+<span id="demo1"></span><br>
+<script>
+var employe=new Object();
+employe.firstName="John";
+employe.lastName="Doe";
+employe.age=50;
+employe.salary=1200;
+
+document.getElementById("demo1").innerText=employe.firstName+" congrats ur are "+employe.age+" year old"
+document.write(employe.lastName+"<br>");
+document.write(employe.salary);
+</script>
+<br><br><br>
+
+
+
+
+
+
+
+<!-- / by using an object consturctor ==> imp one -->
+<span id="demo2"></span><br>
+<script>
+function employe(firstName,lastName,age,salary){
+this.fname=firstName;
+this.lname=lastName;
+this.age=age;
+this.salary=salary
+
+document.write(this.fname+"<br>")
+document.write(this.age)
+document.getElementById("demo2").innerText=this.fname+" congrats ur are "+this.age+" year old"
+}
+employe("dil","kha",25,2700)
+</script>
+
+</body>
+</html>

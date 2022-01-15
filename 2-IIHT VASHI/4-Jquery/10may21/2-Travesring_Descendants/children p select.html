@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div").children(".f").css({
+				"color": "red",
+				"border":"3px solid red"
+			});
+		});
+	});
+</script>
+<style type="text/css">
+	.one *
+	{
+		display: block;
+		border: 2px solid black;
+		color: black;
+		padding: 5px;
+		margin: 15px;
+	}
+</style>
+</head>
+<body>
+
+<div class="one" style="width:500px;">div (current element) 
+  <p class="f">p (child)
+    <span>span (grandchild)</span>   
+  </p>
+  <p class="s">p (child)
+    <span>span (grandchild)</span>
+  </p> 
+</div>
+
+<button>one</button>
+</body>
+</html>

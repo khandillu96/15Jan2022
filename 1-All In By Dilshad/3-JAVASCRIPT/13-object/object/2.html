@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<span id="demo2"></span><br>
+<script>
+// by using an object consturctor ==> imp one
+function employe(firstName,lastName,age,salary){
+    this.fname=firstName;
+    this.lname=lastName;
+    this.age=age;
+    this.salary=salary
+}
+var e= new employe("dil","kha",225,2700)
+
+document.write(e.fname+"<br>")
+document.write(e.age)
+document.getElementById("demo2").innerText=e.fname+" congrats ur are "+e.age+" year old"
+</script>
+</body>
+</html>
